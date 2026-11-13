@@ -4,8 +4,9 @@ import pytest
 
 from landxml_viz.landxml_parser import parse_landxml, to_xyz
 
-TRENCH = os.path.expanduser(
-    '~/Puskunrata_Oja_keskella_pohja_160cm_luiskat_1_2_100_45_100_75-0.200.xml')
+TRENCH = os.path.join(
+    os.path.dirname(__file__), '..', 'landxmlmodels',
+    'Puskunrata_Oja_keskella_pohja_160cm_luiskat_1_2_100_45_100_75-0.200.xml')
 
 MINIMAL = """<?xml version="1.0" encoding="ISO-8859-1"?>
 <LandXML xmlns="http://buildingsmart.fi/inframodel/404" version="1.2">

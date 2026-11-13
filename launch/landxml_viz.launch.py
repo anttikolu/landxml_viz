@@ -10,8 +10,9 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     share = get_package_share_directory('landxml_viz')
-    default_file = os.path.expanduser(
-        '~/Puskunrata_Oja_keskella_pohja_160cm_luiskat_1_2_100_45_100_75-0.200.xml')
+    default_file = os.path.join(
+        share, 'landxmlmodels',
+        'Puskunrata_Oja_keskella_pohja_160cm_luiskat_1_2_100_45_100_75-0.200.xml')
 
     return LaunchDescription([
         DeclareLaunchArgument('file_path', default_value=default_file),

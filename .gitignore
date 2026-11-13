@@ -17,3 +17,6 @@ __pycache__/
 
 # (OPTION) Ignore mount points.
 # /data
+
+# Pytest
+.pytest_cache/
